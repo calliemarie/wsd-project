@@ -1,15 +1,19 @@
 body{
 	background-image: url('../images/bg_stadium.jpg');
 	background-attachment: fixed;
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font: 100%/1.5 'Helvetica Neue', Arial, sans-serif;
+}
+
+#wrapper{
+	width: 100%;
 }
 
 h1{
 	font-family: 'Almendra SC', serif;
-	font-size: 70px;
-	padding: 5px 5px 0px;
+	font-size: 4.375em; /*70px*/
+	padding: 1.142857142857% 1.142857142857% 0%; /*5px 5px 0px*/
 	text-shadow: 2px 2px 2px black;	
 	text-align: center;
 	color: white;
@@ -17,17 +21,15 @@ h1{
 
 h2{
 	float: left;
-	width: 340px;
-	font-family: 'Norican', cursive;
+	width: 35.4166666667%; /*340px/960px*/
+	font: 1.875em /*30px*/'Norican', cursive;
 	margin: 0 auto;
 	text-shadow: 2px 2px 2px black;	
-	font-size: 30px;
 	color: white;
 }
 
 h3{
-	font-family: 'Almendra SC', serif;
-	font-size: 25px;
+	font: 1.5625em /*13px*/'Almendra SC', serif;
 	text-align: center;
 	text-shadow: 2px 2px 2px black;	
 }
@@ -35,14 +37,14 @@ h3{
 /*Main Nav-------------------------------------------------------------------*/
 nav{
 	float: right;
-	width: 275px;
+	width: 28.6458333333%; /*275px/960px*/
 	margin: 0 auto;
 }
 
 nav ul{
 	background: white;
 	list-style-type: none;
-	padding: 0;
+	padding: 0%;
 	overflow: hidden;
 	opacity: .9;
 	border: 3px solid maroon;
@@ -51,7 +53,7 @@ nav ul{
 
 nav li{
 	float: left;
-	margin-left: 10px;
+	margin-left: 1.0416666666%; /*10px*/
 }
 
 nav a {
@@ -80,8 +82,8 @@ nav a:hover{
 #cta{
 	background-color: white;
 	border: 3px solid maroon;
-	width: 956px;
-	margin: 25px 0px;
+	width: 99.58333333%; /*956px/900px*/
+	margin: 2.60416666666% 0%; /*25px*/
 	overflow: hidden;
 	color: black;	
 	opacity: .95;
@@ -91,14 +93,14 @@ nav a:hover{
 	float: left;
 	border: 2px solid white;
 	border-radius: 5px;
-	margin: 10px;
+	margin: 1.0416666666%; /*10px*/;
 	width: 60%;
 }
 
 .button{
 	display: inline;
-	width: 200px; 
-	height: 44px;
+	width: 20.83333333%; /*200px/960px*/ 
+	height: 4.583333333%; /*44px*/
 	text-align: center;
 	background-color: white;
 	color: black;
@@ -106,20 +108,19 @@ nav a:hover{
 	border-radius: 5px;
 	box-shadow: 0 1px 1px #aaa;
 	float: right;
-	margin: 40px 75px 25px;
+	margin: 4.16666666667% 7.8125% 2.60416666667%; /*40px 75px 25px*/
 	background: moz-linear-gradient (top,rgba(226,226,226,1 ) 0%,rgba(219,219,219,1 ) 50%,rgba(209,209,209,1 ) 51%,rgba(254,254,254,1 ) 100% )
 }
 
 #benefits{
-	width: 305px;
+	width: 31.770833333%; /*305px*/
 	float: right;
-	padding: 5px;
+	padding: 1.639344262295%; /*5px*/
 }
 
 #benefits p{
-	font-size: 13px;
+	font-size: .8125em;
 	text-align: center;
-	margin-left: 0px;
 }
 /*-------------------------------------Schedule------------------------------*/
 #content{
@@ -138,7 +139,7 @@ nav a:hover{
 	text-align: center;
 	border: 3px solid maroon;
 	opacity: .9;
-	width: 200px;
+	width: 20.83333333%; /*200px*/
 	clear: both;
 	float: left;
 	margin: 25px 0px;
@@ -158,7 +159,7 @@ aside{
 	background-color: white;
 	border: 3px solid maroon;
 	float:left;
-	width: 250px;
+	width: 26.041666666667%; /*250px*/
 	text-align: center;
 	opacity: .9;	
 }
@@ -170,10 +171,10 @@ aside ul{
 
 /*-------------------------------------------Gallery-----------------------*/
 #gallery {
-        width: 320px;
+        width: 33.333333333%; /*320px*/
         float: right;
         overflow: hidden;
-        margin: 25px 10px;
+        margin: 2.60416666666% 0%; /*25px 0px*/
 		background-color: white;
 		border: 3px solid maroon;
 		opacity: .9;
@@ -181,20 +182,20 @@ aside ul{
 
 #gallery ul {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        padding: 0%;
+        margin: 0%;
         overflow: hidden;
 }
 
 #gallery ul li {
-        width: 140px;
+        width: 14.583333333%; /*140px*/
         float: left;
-        margin: 10px;
+        margin: 1.041666666667%; /*10px*/
 }
 
 #gallery ul li a {
         display: block;
-        height: 101px;
+        height: 10.520833333333%; /*101px*/
         border: 5px solid white;
 }
 
@@ -214,12 +215,29 @@ footer{
 /*------------------Media Queries --------------------------------------------*/
 	/*Tablet Portrait size to standard 960 (devices and browsers) */
 	@media screen and (min-width: 768px) and (max-width: 959px) {
+	#gallery {width: 33.333333333%;}
+	#wrapper {width: 100%;}
+	#aside {float: left;}
+	
 }
 
 	/*Mobile Landscape Size to Tablet Portrait(devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#sunset img {display: none;}
+	#content {-moz-column-count: 1;}
+	#h2 {display: none;}
+	nav {float: none:}
+	
 }
 
 	/*Mobile Portrait Size to Moblie Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+	#sunset img {display: none;}
+	#gallery {display: none;}
+	#benefits {float: none; width: 90%;}
+	aside {float: none; width: 90%;}
+	#schedule {float: none; width: 90%;}
+	#content {-moz-column-count: 1;}
+	#h2 {display: none;}
+	nav {float: none:}
 }
