@@ -122,7 +122,7 @@ nav a:hover{
 	font-size: .8125em;
 	text-align: center;
 }
-/*-------------------------------------Schedule------------------------------*/
+
 #content{
 	-moz-column-count: 3;
 	background-color: white;
@@ -133,7 +133,7 @@ nav a:hover{
 	text-shadow: none;
 	opacity: .9;
 }
-
+/*-------------------------------------Schedule------------------------------*/
 #schedule{
 	background-color: white;
 	text-align: left;
@@ -253,7 +253,11 @@ footer{
 	#sunset img {display: none;}
 	#content {-moz-column-count: 1;}
 	#h2 {display: none;}
-	nav {float: none:}
+	nav {float: none;}
+	#gallery{width: 90% float: none;}
+	aside {float: none;}
+	#schedule {float: none; width 90%;}
+	table {width 90%;}
 	
 }
 
@@ -262,9 +266,13 @@ footer{
 	#sunset img {display: none;}
 	#gallery {display: none;}
 	#benefits {float: none; width: 90%;}
-	aside {float: none; width: 90%;}
+	aside {display: none;}
 	#schedule {float: none; width: 90%;}
 	#content {-moz-column-count: 1;}
-	#h2 {display: none;}
-	nav {float: none:}
+	h2 {display: none;}
+	nav {float: none; width 80%; display: inline;}
+	nav ul{float: none;}
+	#sign_up{width: 90%}
+	h1 {font-size: 199%;}
+	
 }
