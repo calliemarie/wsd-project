@@ -37,7 +37,7 @@ h3{
 /*Main Nav-------------------------------------------------------------------*/
 nav{
 	float: right;
-	width: 28.6458333333%; /*275px/960px*/
+	width: 40%;/*28.6458333333%; /*275px/960px*/
 	margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ nav ul{
 
 nav li{
 	float: left;
-	margin-left: 1.0416666666%; /*10px*/
+	margin-left: 9%; /*10px*/
 }
 
 nav a {
@@ -108,7 +108,7 @@ nav a:hover{
 	border-radius: 5px;
 	box-shadow: 0 1px 1px #aaa;
 	float: right;
-	margin: 4.16666666667% 7.8125% 2.60416666667%; /*40px 75px 25px*/
+	margin: 1.76666666667% 7.8125% 2.60416666667%; /*40px 75px 25px*/
 	background: moz-linear-gradient (top,rgba(226,226,226,1 ) 0%,rgba(219,219,219,1 ) 50%,rgba(209,209,209,1 ) 51%,rgba(254,254,254,1 ) 100% )
 }
 
@@ -136,32 +136,45 @@ nav a:hover{
 
 #schedule{
 	background-color: white;
-	text-align: center;
+	text-align: left;
 	border: 3px solid maroon;
 	opacity: .9;
-	width: 20.83333333%; /*200px*/
+	width: 38%; /*20.83333333%; /*200px*/ 
 	clear: both;
 	float: left;
-	margin: 25px 0px;
+	margin: 2% 0%;
 }
 
-#schedule ul{
-	padding: 0px;
+table{
+	border-collapse: collapse;
+}
+td{
+	border: 1px solid maroon;
+	text-align: center;
+	padding: .3em;
 }
 
-#schedule li{
-	list-style-type: none;
+th{
+	text-align: center;
+	padding: .3em;
+	border: 1px solid maroon;
 }
 
+.odd_row {
+	background: maroon;
+	color: white;
+}
 /*-----------------------------------Pride--------------------------------*/
 aside{
-	margin: 25px 61px;
+	margin: 1% 0%;
 	background-color: white;
 	border: 3px solid maroon;
-	float:left;
-	width: 26.041666666667%; /*250px*/
+	float: right;
+	width: 20%; /*250px*/
 	text-align: center;
-	opacity: .9;	
+	opacity: .9;
+	padding: .5%;
+	font-size: 14px;
 }
 
 aside ul{
@@ -171,10 +184,10 @@ aside ul{
 
 /*-------------------------------------------Gallery-----------------------*/
 #gallery {
-        width: 33.333333333%; /*320px*/
-        float: right;
+        width: 33.33333%; /*320px*/
+        float: left;
         overflow: hidden;
-        margin: 2.60416666666% 0%; /*25px 0px*/
+        margin: 1% 0% 1% 2%; /*25px 0px*/
 		background-color: white;
 		border: 3px solid maroon;
 		opacity: .9;
@@ -184,27 +197,41 @@ aside ul{
         list-style-type: none;
         padding: 0%;
         margin: 0%;
-        overflow: hidden;
 }
 
 #gallery ul li {
-        width: 14.583333333%; /*140px*/
+        width: 43.75%; /*140px*/
         float: left;
-        margin: 1.041666666667%; /*10px*/
+        margin: 2.8%; /*10px*/
 }
 
 #gallery ul li a {
         display: block;
-        height: 10.520833333333%; /*101px*/
-        border: 5px solid white;
+        height: 101px;
+        border: 5px solid purple;
 }
 
-#gallery ul li a:visited {border-color: maroon;
+#gallery ul li a:visited 
+	{border-color: maroon;
 }
 
-#gallery ul li a:hover {border-color: silver;
+#gallery ul li a:hover 
+	{border-color: silver;
+}
+/*---------------------------------Form---------------------------------------*/
+input:focus{
+	border: 3px solid maroon;
 }
 
+#sign_up{
+	background-color: white;
+	width: 56.8%;
+	opacity: .9;
+	float: left;
+	border: 3px solid maroon;
+	margin: 2% 0% 2% 2%;
+	padding: .9469%;
+}
 
 /*------------------------------------Footer----------------------------------*/
 footer{
